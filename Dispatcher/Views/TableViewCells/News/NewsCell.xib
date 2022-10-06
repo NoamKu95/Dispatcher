@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="436" id="KGk-i7-Jjw" customClass="NewsCell" customModule="Dispatcher_Development" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="436"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="436"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light-gray-background" translatesAutoresizingMaskIntoConstraints="NO" id="VWF-pu-E1i">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="149"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="149" id="xBn-ht-KGp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Friday Jun 25, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQE-EG-wuI">
+                        <rect key="frame" x="16" y="160" width="121.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" name="Dispatch Gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQV-uQ-TU1">
+                        <rect key="frame" x="208.5" y="159" width="65" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="iy8-vp-8kF"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Crypto">
+                            <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                            <color key="baseForegroundColor" name="Dispatch Purple"/>
+                            <color key="baseBackgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-ci-UqJ">
+                        <rect key="frame" x="283.5" y="159" width="42.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="nzT-09-bnq"/>
+                            <constraint firstAttribute="height" constant="20" id="wZL-gB-WQx"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="+ 3">
+                            <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                            <color key="baseForegroundColor" name="Dispatch Purple"/>
+                            <color key="baseBackgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="China's renewed crypto crackdown wipes nearly $300 billion off the market as bitcoin slides" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN6-xD-0Sb" userLabel="Title">
+                        <rect key="frame" x="16" y="193" width="310" height="63.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Arjun Kharpal, CNBC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEp-5q-ZCL" userLabel="Author">
+                        <rect key="frame" x="16" y="266.5" width="310" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" name="Dispatch Gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzC-95-AJi" userLabel="Summary">
+                        <rect key="frame" x="16" y="296.5" width="310" height="82.5"/>
+                        <string key="text">On Friday, Chinese Vice Premier Liu He said it is necessary to “crack down on Bitcoin mining and trading behavior” to prevent risks to the “social field.” For a long time, Chinese authorities have been concerned about the ...</string>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" name="Dispatch Purple"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favoriteArticle-notSelected" translatesAutoresizingMaskIntoConstraints="NO" id="dYu-x4-M7u">
+                        <rect key="frame" x="296" y="16" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="UM1-3B-pzE"/>
+                            <constraint firstAttribute="width" constant="30" id="vut-Cw-8Cy"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJ3-wz-dSX" customClass="MainActionButtonView" customModule="Dispatcher_Development" customModuleProvider="target">
+                        <rect key="frame" x="16" y="388" width="310" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="xnE-aq-TZp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dYu-x4-M7u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="294-Ld-6yp"/>
+                    <constraint firstItem="PJ3-wz-dSX" firstAttribute="top" secondItem="NzC-95-AJi" secondAttribute="bottom" constant="9" id="2Dc-kj-RcJ"/>
+                    <constraint firstItem="pEp-5q-ZCL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4by-aq-whX"/>
+                    <constraint firstAttribute="trailing" secondItem="pEp-5q-ZCL" secondAttribute="trailing" constant="16" id="53R-D6-COD"/>
+                    <constraint firstAttribute="bottom" secondItem="PJ3-wz-dSX" secondAttribute="bottom" constant="12" id="7mB-oR-UvG"/>
+                    <constraint firstAttribute="trailing" secondItem="5WY-ci-UqJ" secondAttribute="trailing" constant="16" id="8ea-qI-TRX"/>
+                    <constraint firstItem="NzC-95-AJi" firstAttribute="top" secondItem="pEp-5q-ZCL" secondAttribute="bottom" constant="9" id="CPd-Ba-YrN"/>
+                    <constraint firstItem="hQE-EG-wuI" firstAttribute="top" secondItem="VWF-pu-E1i" secondAttribute="bottom" constant="11" id="LGz-Xn-q17"/>
+                    <constraint firstItem="hQE-EG-wuI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PJh-Rm-kmO"/>
+                    <constraint firstItem="VWF-pu-E1i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qq5-CR-0Wx"/>
+                    <constraint firstItem="lN6-xD-0Sb" firstAttribute="top" secondItem="tQV-uQ-TU1" secondAttribute="bottom" constant="14" id="T49-Ww-CjZ"/>
+                    <constraint firstItem="NzC-95-AJi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XI8-0Y-hUi"/>
+                    <constraint firstAttribute="trailing" secondItem="dYu-x4-M7u" secondAttribute="trailing" constant="16" id="Yha-92-jDh"/>
+                    <constraint firstItem="lN6-xD-0Sb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZWo-GQ-8hk"/>
+                    <constraint firstAttribute="trailing" secondItem="NzC-95-AJi" secondAttribute="trailing" constant="16" id="dJK-Yy-3it"/>
+                    <constraint firstItem="5WY-ci-UqJ" firstAttribute="top" secondItem="VWF-pu-E1i" secondAttribute="bottom" constant="10" id="dsJ-g8-k1W"/>
+                    <constraint firstItem="VWF-pu-E1i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ePO-Qh-uke"/>
+                    <constraint firstAttribute="trailing" secondItem="lN6-xD-0Sb" secondAttribute="trailing" constant="16" id="efh-Zj-yRv"/>
+                    <constraint firstItem="tQV-uQ-TU1" firstAttribute="top" secondItem="VWF-pu-E1i" secondAttribute="bottom" constant="10" id="exE-kd-qBe"/>
+                    <constraint firstItem="5WY-ci-UqJ" firstAttribute="leading" secondItem="tQV-uQ-TU1" secondAttribute="trailing" constant="10" id="iiW-b4-oBU"/>
+                    <constraint firstItem="pEp-5q-ZCL" firstAttribute="top" secondItem="lN6-xD-0Sb" secondAttribute="bottom" constant="10" id="mQS-0b-W1f"/>
+                    <constraint firstItem="PJ3-wz-dSX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="muD-B8-16C"/>
+                    <constraint firstAttribute="trailing" secondItem="VWF-pu-E1i" secondAttribute="trailing" id="qeH-BP-QFE"/>
+                    <constraint firstAttribute="trailing" secondItem="PJ3-wz-dSX" secondAttribute="trailing" constant="16" id="vI8-tz-Fko"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="Dispatch Light Gray"/>
+            <connections>
+                <outlet property="actionButton" destination="PJ3-wz-dSX" id="1QX-fP-g74"/>
+                <outlet property="authorLabel" destination="pEp-5q-ZCL" id="mTT-b5-2jp"/>
+                <outlet property="dateLabel" destination="hQE-EG-wuI" id="AVf-gG-qAN"/>
+                <outlet property="entireNewsCell" destination="H2p-sc-9uM" id="y0t-pM-SHg"/>
+                <outlet property="favoriteIcon" destination="dYu-x4-M7u" id="aBj-Lu-a3e"/>
+                <outlet property="moreSubjectsTag" destination="5WY-ci-UqJ" id="YIp-8b-st5"/>
+                <outlet property="newsImage" destination="VWF-pu-E1i" id="LbS-q3-QXG"/>
+                <outlet property="subjectTag" destination="tQV-uQ-TU1" id="h3C-0u-9uL"/>
+                <outlet property="summaryLabel" destination="NzC-95-AJi" id="hHW-Vv-qTp"/>
+                <outlet property="titleLabel" destination="lN6-xD-0Sb" id="MmW-vX-uFE"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="239.73214285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favoriteArticle-notSelected" width="10" height="10"/>
+        <image name="light-gray-background" width="640" height="360"/>
+        <namedColor name="Dispatch Gray">
+            <color red="0.85098039215686272" green="0.85882352941176465" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dispatch Light Gray">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dispatch Purple">
+            <color red="0.35294117647058826" green="0.35294117647058826" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

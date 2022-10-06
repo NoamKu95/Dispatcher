@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormInputView" customModule="Dispatcher_Development" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="xb8-j5-DvW"/>
+                <outlet property="textField" destination="NH4-SQ-E2c" id="B0d-If-gr7"/>
+                <outlet property="textfieldIcon" destination="MZf-Ud-f30" id="rqq-d6-Mc9"/>
+                <outlet property="warningLabel" destination="LvZ-LL-eYv" id="3Ew-i3-ADJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email" textAlignment="natural" minimumFontSize="17" background="white-background" disabledBackground="white-background" translatesAutoresizingMaskIntoConstraints="NO" id="NH4-SQ-E2c">
+                    <rect key="frame" x="0.0" y="2" width="374" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QUg-gY-VWL"/>
+                    </constraints>
+                    <color key="textColor" name="Dispatch Purple"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid email adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-LL-eYv">
+                    <rect key="frame" x="0.0" y="51" width="374" height="12"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-icon-conseal" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-Ud-f30">
+                    <rect key="frame" x="337" y="12" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="78i-Sc-XQ4"/>
+                        <constraint firstAttribute="width" constant="25" id="F1a-Uq-ItA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NH4-SQ-E2c" firstAttribute="trailing" secondItem="MZf-Ud-f30" secondAttribute="trailing" constant="12" id="9pQ-l7-g57"/>
+                <constraint firstItem="MZf-Ud-f30" firstAttribute="top" secondItem="NH4-SQ-E2c" secondAttribute="top" constant="10" id="EL0-W6-KjA"/>
+                <constraint firstItem="LvZ-LL-eYv" firstAttribute="top" secondItem="NH4-SQ-E2c" secondAttribute="bottom" constant="5" id="HnU-xl-Kfl"/>
+                <constraint firstItem="LvZ-LL-eYv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LFs-SF-SfS"/>
+                <constraint firstAttribute="trailing" secondItem="NH4-SQ-E2c" secondAttribute="trailing" id="LMt-3O-vMF"/>
+                <constraint firstItem="NH4-SQ-E2c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ovb-J2-F6d"/>
+                <constraint firstAttribute="bottom" secondItem="LvZ-LL-eYv" secondAttribute="bottom" id="bFR-9w-YEm"/>
+                <constraint firstAttribute="trailing" secondItem="LvZ-LL-eYv" secondAttribute="trailing" id="k5T-B6-hCe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="108.69565217391305" y="-168.41517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye-icon-conseal" width="10" height="9"/>
+        <image name="white-background" width="246.5" height="54.5"/>
+        <namedColor name="Dispatch Purple">
+            <color red="0.35294117647058826" green="0.35294117647058826" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

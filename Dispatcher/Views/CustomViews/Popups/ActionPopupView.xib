@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionPopupView" customModule="Dispatcher_Development" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="lxU-9p-V55"/>
+                <outlet property="leftButton" destination="QrW-8H-rem" id="9fj-49-VCy"/>
+                <outlet property="popupText" destination="wxT-UG-J6A" id="kzc-Bb-8nw"/>
+                <outlet property="popupTitle" destination="oTP-Yf-Eaw" id="snX-SL-Mtm"/>
+                <outlet property="rightButton" destination="yWn-w1-dkx" id="7d4-r6-zVQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okb-Zd-gWO">
+                    <rect key="frame" x="0.0" y="17.5" width="377" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTP-Yf-Eaw">
+                            <rect key="frame" x="25" y="18" width="327" height="28"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload new image for your personal Icon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxT-UG-J6A">
+                            <rect key="frame" x="25" y="58" width="327" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" name="Dispatch Purple"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrW-8H-rem">
+                            <rect key="frame" x="174" y="113" width="74" height="33"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Gallery">
+                                <fontDescription key="titleFontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="leftButtonPressed:" destination="-1" eventType="touchUpInside" id="4gH-QK-VYm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWn-w1-dkx">
+                            <rect key="frame" x="273" y="113" width="80" height="33"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Camera">
+                                <fontDescription key="titleFontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="rightButtonPressed:" destination="-1" eventType="touchUpInside" id="N2F-IN-ogu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="wxT-UG-J6A" firstAttribute="leading" secondItem="Okb-Zd-gWO" secondAttribute="leading" constant="25" id="6GU-dn-BdB"/>
+                        <constraint firstItem="oTP-Yf-Eaw" firstAttribute="leading" secondItem="Okb-Zd-gWO" secondAttribute="leading" constant="25" id="6J9-Kn-OYH"/>
+                        <constraint firstAttribute="trailing" secondItem="wxT-UG-J6A" secondAttribute="trailing" constant="25" id="8En-Yj-fCh"/>
+                        <constraint firstAttribute="bottom" secondItem="QrW-8H-rem" secondAttribute="bottom" constant="24" id="ADs-2L-Hxh"/>
+                        <constraint firstItem="yWn-w1-dkx" firstAttribute="leading" secondItem="QrW-8H-rem" secondAttribute="trailing" constant="25" id="B8d-h4-mXh"/>
+                        <constraint firstAttribute="trailing" secondItem="yWn-w1-dkx" secondAttribute="trailing" constant="24" id="NCb-4R-Yjy"/>
+                        <constraint firstItem="oTP-Yf-Eaw" firstAttribute="top" secondItem="Okb-Zd-gWO" secondAttribute="top" constant="18" id="StK-ju-6Pf"/>
+                        <constraint firstAttribute="trailing" secondItem="oTP-Yf-Eaw" secondAttribute="trailing" constant="25" id="XXV-ud-2NH"/>
+                        <constraint firstItem="wxT-UG-J6A" firstAttribute="top" secondItem="oTP-Yf-Eaw" secondAttribute="bottom" constant="12" id="fv2-Rz-cD6"/>
+                        <constraint firstAttribute="bottom" secondItem="yWn-w1-dkx" secondAttribute="bottom" constant="24" id="kSH-yG-JaZ"/>
+                        <constraint firstAttribute="height" constant="170" id="va6-Dc-AVB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Okb-Zd-gWO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="USl-I4-8Wf"/>
+                <constraint firstItem="Okb-Zd-gWO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bP2-1e-9m4"/>
+                <constraint firstAttribute="trailing" secondItem="Okb-Zd-gWO" secondAttribute="trailing" id="i33-3h-hVB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="200.72463768115944" y="-167.74553571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Dispatch Purple">
+            <color red="0.35294117647058826" green="0.35294117647058826" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
